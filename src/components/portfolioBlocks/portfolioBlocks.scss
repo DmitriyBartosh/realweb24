@@ -1,0 +1,139 @@
+.portfolioTitle{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  min-height: 500px;
+  h2{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    @media only screen and (max-width: 960px){
+      font-size: 2.5rem;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 1.8rem;
+    }
+    span{
+      color: rgb(236, 66, 51);
+    }
+  }
+  p{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    line-height: 1.35rem;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+.portfolioList{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  row-gap: 100px;
+  column-gap: 40px;
+  max-width: 1150px;
+  width: 80%;
+  margin: 0 auto;
+  @media only screen and (max-width: 996px) {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .portfolioHorizontal,
+  .portfolioVertical{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: center;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 
+    0 0.3em 0.5em -0.2em rgba(100,100,100,1),
+    0 0.3em 1em -0.75em rgba(100,100,100,0.75),
+    0 0.3em 2em -0.5em rgba(100,100,100,0.5),
+    0 3em 3em -0.25em rgba(100,100,100,0.2);
+    text-decoration: none;
+    color: #333;
+    .portfolioPreview{
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      span{
+        height: 100%;
+        width: 100%;
+        img{
+          object-fit: cover;
+          min-width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .portfolioDescription{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 24px;
+      min-height: 40px;
+      background-color: white;
+      @media only screen and (max-width: 996px) {
+        padding: 5px 12px;
+      }
+      p{
+        margin: 5px 0;
+      }
+      h4{
+        margin: 0;
+        font-size: 18px;
+        @media only screen and (max-width: 996px) {
+          font-size: 16px;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .portfolioHorizontal{
+    width: 520px;
+    height: 400px;
+    @media only screen and (max-width: 1400px) {
+      width: 475px;
+      height: 365px;
+    }
+    @media only screen and (max-width: 1200px) {
+      width: 450px;
+      height: 346px;
+    }
+    @media only screen and (max-width: 776px) {
+      width: 300px;
+      height: 231px;
+    }
+  }
+  .portfolioVertical{
+    width: 400px;
+    height: 520px;
+    @media only screen and (max-width: 1400px) {
+      width: 365px;
+      height: 475px;
+    }
+    @media only screen and (max-width: 1200px) {
+      width: 346px;
+      height: 450px;
+    }
+    @media only screen and (max-width: 996px) {
+      width: 308px;
+      height: 400px;
+    }
+    @media only screen and (max-width: 776px) {
+      width: 231px;
+      height: 300px;
+    }
+  }
+}

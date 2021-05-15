@@ -1,0 +1,9 @@
+.logoContainer{
+  position: relative;
+  height: 65px;
+  width: 125px;
+  @media only screen and (max-width: 600px) {
+    height: 47px;
+    width: 92px;
+  }
+}

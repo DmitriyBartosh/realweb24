@@ -1,0 +1,66 @@
+.fundamental{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 0px 100%;
+  }
+  &Slide{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      padding: 20px;
+      z-index: 10;
+    }
+    .fundamentalSlideTitle{
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      @media only screen and (max-width: 600px) {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+    }
+    .fundamentalSlideDescription{
+      font-size: 1.25rem;
+      margin-top: 30px;
+      line-height: 1.5rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+    }
+  }
+  .fundamentalLeft{
+    @media only screen and (max-width: 600px) {
+      background: rgba(0, 0, 0, 0.6);
+      width: 100vw;
+      z-index: 10;
+    }
+  }
+  .fundamentalRight{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0;
+      transition: all 1s ease-in-out;
+      transform: scale(1.3);
+      position: absolute;
+      top: 0;
+      &.as-primary {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    }
+  }
+}

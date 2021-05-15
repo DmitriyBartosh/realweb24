@@ -1,0 +1,9 @@
+.contact{
+  color: white;
+  min-height: 100vh;
+  padding-top: 250px;
+  padding-bottom: 160px;
+  @media only screen and (max-width: 600px) {
+    padding-top: 30vh;
+  }
+}

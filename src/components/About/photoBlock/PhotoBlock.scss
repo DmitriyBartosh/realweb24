@@ -1,0 +1,279 @@
+.photo-section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url("../../../assets/img/photo/main-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  .photo-info{
+    position: absolute;
+    z-index: 10;
+    max-width: 80%;
+    opacity: 0.25;
+    .photo-header,
+    .photo-desc{
+      position: relative;
+      width: 100%;
+      color: white;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 auto;
+      z-index: 100;
+    }
+    .photo-header{
+      font-size: 2.25rem;
+      margin-bottom: 35px;
+      @media only screen and (max-width: 600px) {
+        font-size: 1.75rem;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+    }
+    .photo-desc{
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  .photo-front{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: black;
+    opacity: 0.85;
+    box-sizing: border-box;
+  }
+}
+.photo {
+  overflow: hidden;
+  background-color: white;
+  .photo-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    .photo-block {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+        color: rgba(0,0,0, 0.75);
+        @media only screen and (max-width: 1320px) {
+          font-size: 3rem;
+          line-height: 4rem;
+        }
+        @media only screen and (max-width: 992px) {
+          font-size: 2rem;
+          line-height: 2rem;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 1.75rem;
+        }
+      }
+      .one-photo,
+      .two-photo,
+      .three-photo,
+      .four-photo,
+      .five-photo,
+      .six-photo,
+      .text-1,
+      .text-2,
+      .text-3,
+      .text-4,
+      .text-5,
+      .text-6 {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        @media only screen and (max-width: 992px) {
+          padding-right: 5px;
+          padding-left: 5px;
+        }
+        @media only screen and (max-width: 600px) {
+          padding-right: 0px;
+          padding-left: 0px;
+        }
+      }
+      .one-photo {
+        max-width: 45%;
+        margin-top: 100px;
+        @media only screen and (max-width: 992px) {
+          max-width: 55%;
+        }
+        @media only screen and (max-width: 600px) {
+          max-width: 60%;
+        }
+      }
+      .two-photo {
+        max-width: 45%;
+        top: -50px;
+        right: -80px;
+        @media only screen and (max-width: 992px) {
+          max-width: 55%;
+          right: -20px;
+        }
+        @media only screen and (max-width: 600px) {
+          max-width: 62%;
+        }
+      }
+      .three-photo {
+        max-width: 47%;
+        top: -50px;
+        @media only screen and (max-width: 992px) {
+          max-width: 50%;
+        }
+        @media only screen and (max-width: 600px) {
+          max-width: 55%;
+        }
+      }
+      .four-photo {
+        max-width: 43%;
+        top: -80px;
+        right: 30px;
+        @media only screen and (max-width: 992px) {
+          max-width: 50%;
+        }
+        @media only screen and (max-width: 600px) {
+          max-width: 55%;
+          right: 0px;
+        }
+      }
+      .five-photo {
+        max-width: 50%;
+        top: -100px;
+        left: -60px;
+        @media only screen and (max-width: 992px) {
+          max-width: 50%;
+          top: -80px;
+          left: -20px;
+        }
+        @media only screen and (max-width: 600px) {
+          max-width: 55%;
+          left: 0px;
+        }
+      }
+      .six-photo {
+        max-width: 60%;
+        top: -60px;
+      }
+      .text-1 {
+        max-width: 50%;
+        top: 160px;
+        left: -90px;
+        @media only screen and (max-width: 1320px) {
+          max-width: 45%;
+        }
+        @media only screen and (max-width: 992px) {
+          max-width: 40%;
+          left: -50px;
+        }
+        @media only screen and (max-width: 600px) {
+          left: -25px;
+        }
+      }
+      .text-2 {
+        max-width: 50%;
+        z-index: 1;
+        top: 20px;
+        left: 160px;
+        text-align: right;
+        @media only screen and (max-width: 1320px) {
+          max-width: 45%;
+        }
+        @media only screen and (max-width: 992px) {
+          max-width: 38%;
+          left: 55px;
+        }
+        @media only screen and (max-width: 600px) {
+          left: 30px;
+        }
+      }
+      .text-3 {
+        max-width: 45%;
+        z-index: 1;
+        left: -80px;
+        @media only screen and (max-width: 992px) {
+          left: -20px;
+        }
+        @media only screen and (max-width: 600px) {
+          left: -5px;
+        }
+      }
+      .text-4 {
+        max-width: 52%;
+        z-index: 1;
+        top: 45px;
+        right: -40px;
+        text-align: right;
+        @media only screen and (max-width: 1320px) {
+          max-width: 50%;
+        }
+        @media only screen and (max-width: 992px) {
+          max-width: 45%;
+        }
+        @media only screen and (max-width: 600px) {
+          right: -10px;
+        }
+      }
+      .text-5 {
+        max-width: 45%;
+        left: -130px;
+        z-index: 1;
+        @media only screen and (max-width: 1320px) {
+          max-width: 40%;
+        }
+        @media only screen and (max-width: 992px) {
+          left: -45px;
+        }
+        @media only screen and (max-width: 600px) {
+          max-width: 45%;
+          left: -15px;
+        }
+      }
+      .text-6 {
+        max-width: 35%;
+        z-index: 1;
+        text-align: right;
+        left: 60px;
+        top: 0;
+        @media only screen and (max-width: 1320px) {
+          max-width: 30%;
+        }
+        @media only screen and (max-width: 992px) {
+          max-width: 35%;
+        }
+        @media only screen and (max-width: 600px) {
+          max-width: 40%;
+          left: 10px;
+        }
+      }
+    }
+    .one-photo img,
+    .three-photo img,
+    .four-photo img,
+    .two-photo img,
+    .five-photo img,
+    .six-photo img {
+      height: 500px;
+      @media only screen and (max-width: 992px) {
+        height: 300px;
+      }
+    }
+  }
+}

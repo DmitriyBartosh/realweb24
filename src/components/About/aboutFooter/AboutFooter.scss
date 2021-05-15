@@ -1,0 +1,103 @@
+.callbackContent{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 600px;
+  .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    .textCircle{
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin-top: 5rem;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 600;
+      text-transform: uppercase;
+      &>svg{
+        font-family: "Jost-Light";
+        animation: circleText 10s linear infinite;
+        fill: #ef3e16;
+        width: 100%;
+        height: 100%;
+        font-size: 3rem;
+      }
+    }
+    .buttonSection{
+      flex: 0 0 29%;
+      max-width: 29%;
+      flex-wrap: wrap;
+      .callbackBtn{
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        padding: 0;
+        border-radius: 50%;
+        outline: 0;
+        z-index: 1;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all .25s;
+        &:hover{
+          border: 1px solid #ef3e16;
+          transform: scale(.975);
+        }
+        &:hover::after{
+          transform: scale(.9);
+        }
+        span{
+          position: relative;
+          display: block;
+          width: 100%;
+          z-index: 1;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          z-index: 0;
+          -webkit-transition: all .25s;
+          -o-transition: all .25s;
+          transition: all .25s;
+          background: 0 0;
+          background-color: #ef3e16;
+          border: 1px solid #ef3e16;
+      }
+      }
+    }
+    .infoSection{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 0%;
+      flex-grow: 1;
+      max-width: 100%;
+      flex-wrap: wrap;
+      color: white;
+    }
+  }
+}
+
+@keyframes circleText{
+from{
+  transform: rotate(0);
+}
+to{
+  transform: rotate(360deg);
+}
+}

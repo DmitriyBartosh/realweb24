@@ -1,0 +1,67 @@
+.responsive {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  h2{
+    position: absolute;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .responsive-device {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    .macbook-responsive {
+      height: 100%;
+      z-index: 40;
+    }
+    .iphone-responsive {
+      position: absolute;
+      height: 50%;
+      z-index: 2;
+      opacity: 0;
+    }
+    .ipad-responsive {
+      position: absolute;
+      height: 70%;
+      z-index: 4;
+      opacity: 0;
+    }
+    .video-scale {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 500px;
+      width: 841.5px;
+      overflow: hidden;
+      z-index: 80;
+      .responsive-video {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 100;
+      }
+      .responsive-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 150;
+      }
+    }
+  }
+  
+}
