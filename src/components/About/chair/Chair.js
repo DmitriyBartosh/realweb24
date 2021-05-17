@@ -24,7 +24,7 @@ function Chair() {
     var loaded = false;
     const duration = 1500;
     var activeOption = 'legs';
-    const BACKGROUND_COLOR = 0xffffff;
+    const BACKGROUND_COLOR = 0xfaebd7;
     const scene = new THREE.Scene();
     // Set background
     scene.background = new THREE.Color(BACKGROUND_COLOR);

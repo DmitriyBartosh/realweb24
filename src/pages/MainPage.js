@@ -43,9 +43,10 @@ function MainPage() {
         animate='show'
         exit='hidden'
         className="title">
-        <motion.h1 variants={itemScale} transition={{duration: 0.3, type: "tween"}}>Мы разрабатываем<br /><span>цифровые</span> продукты</motion.h1>
-        <motion.h4 variants={itemUp} transition={{duration: 0.4}}>Поможем сделать ваш бренд <span>уникальным</span></motion.h4>
-        <motion.p variants={itemUp} transition={{duration: 0.3}}>Дизайн.<br/>Сайты. Приложения.<br />Продвижение.</motion.p>
+        <motion.h3 variants={itemScale} transition={{duration: 0.4, type: "tween"}}><span>R</span>eal A<span>r</span>t | Вебстудия</motion.h3>
+        <motion.h1 variants={itemScale} transition={{duration: 0.4, type: "tween"}}>Мы разрабатываем<br /><span>цифровые</span> продукты</motion.h1>
+        <motion.h4 variants={itemUp} transition={{duration: 0.5}}>Поможем сделать ваш бренд <span>уникальным</span></motion.h4>
+        <motion.p variants={itemUp} transition={{duration: 0.4}}>Дизайн.<br/>Сайты. Приложения.<br />Продвижение.</motion.p>
         <motion.div
           initial={{ opacity: 0, y: 15}}
           animate={{ opacity: 1, y: 0}}

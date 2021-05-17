@@ -87,9 +87,9 @@ function Intro() {
     <div className="intro-screen-wrapper" ref={introRef}>
 
       <div className="web-studios-wrapper">
-        <h4 className="web-studios" ref={titleRef}>
-          RealArt Студия
-        </h4>
+        <h3 className="web-studios" ref={titleRef}>
+          <span>R</span>eal A<span>r</span>t | Вебстудия
+        </h3>
       </div>
 
       <div className="loader-text-wrap">

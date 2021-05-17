@@ -58,12 +58,13 @@ function ContactForm() {
         exit={{ opacity: 0, y: 30}}
         transition={{duration: 0.6, type: "tween", delay: 0.1}}
         className="contactDescription"
-        >Заполните форму или свяжитесь с<br />нами <a href='https://tlgg.ru/@klisakov'>в telegram</a>, а также <a href='tel:+79135351898'>+7 (913) 535-18-98</a></motion.p>
+        >Заполните форму<br/>и мы подготовим для Вас <span>предложение</span><br /><br />или свяжитесь с нами<br /><a href='tel:+79135351898'>+7 (913) <span>535-18-98</span></a></motion.p>
 
       <motion.form
         initial={{y: 300, opacity: 0}}
         animate={{y: 0, opacity: 1}}
-        transition={{duration: 0.8, delay: 0.2}}
+        exit={{ opacity: 0 }}
+        transition={{duration: 0.6, delay: 0.2}}
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="inputForm">

@@ -44,10 +44,11 @@ function PhoneBlock() {
     <div className="introPhoneBlack" ref={phoneRef}>
       <div className="introPhoneTemplate" style={{backgroundImage: `url(${imgSrc})`}}>
         <video 
-        className="collageElement" 
-        playsInline=''
-        webkit-playsinline="true"
+        className="collageElement"
+        playsInline
+        webkit-playsInline
         autoPlay
+        muted
         loop
         src={videoUrl}
         />

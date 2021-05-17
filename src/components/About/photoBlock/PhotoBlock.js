@@ -96,7 +96,7 @@ function PhotoBlock() {
     <div className="photo-section" ref={photoRef}>
       <div className="photo-info" ref={textRef}>
         <h2 className="photo-header">Фотографии</h2>
-        <p className="photo-desc">важная часть успеха Вашего бренда</p>
+        <p className="photo-desc">важная часть успеха<br />Вашего <span>бренда</span></p>
       </div>
       <div className="photo-front" ref={photoFrontRef}/>
     </div>

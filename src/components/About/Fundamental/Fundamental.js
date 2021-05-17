@@ -26,7 +26,7 @@ function Fundamental() {
       scrollTrigger: {
         trigger: featureSlidesRightRef.current,
         start: 'top top',
-        end: () => `+=${featureSliderRef.current.offsetHeight}`,
+        end: () => `+=${featureSliderRef.current.offsetHeight/1.45}`,
         scrub: true,
         pin: true,
       }

@@ -4,6 +4,7 @@
   top: 0;
   right: 0;
   bottom: 0;
+  background-color: black;
   background-image: url('../../../assets/img/texture/black_denim.png');
   background-repeat: repeat;
   z-index: 1000;
@@ -23,7 +24,7 @@
       color: white;
       font-weight: 400;
       padding: 0px 20px;
-      font-size: 1.15rem;
+      font-size: 1rem;
       text-align: center;
       margin-bottom: 75px;
       visibility: hidden;
@@ -31,6 +32,11 @@
     .web-studios{
       visibility: hidden;
       color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      span{
+        color: #ec4233;
+      }
     }
   }
   .loader-text-wrap {

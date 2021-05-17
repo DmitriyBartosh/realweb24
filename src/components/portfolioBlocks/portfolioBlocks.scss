@@ -6,9 +6,9 @@
   justify-content: center;
   height: 70vh;
   min-height: 500px;
+  color: white;
+  text-align: center;
   h2{
-    color: white;
-    text-align: center;
     font-size: 3rem;
     @media only screen and (max-width: 960px){
       font-size: 2.5rem;
@@ -20,9 +20,14 @@
       color: rgb(236, 66, 51);
     }
   }
+  h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    span{
+      color: #ec4233;
+    }
+  }
   p{
-    color: white;
-    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-size: 1rem;
@@ -50,12 +55,8 @@
     justify-content: space-between;
     justify-self: center;
     background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset;
     cursor: pointer;
-    box-shadow: 
-    0 0.3em 0.5em -0.2em rgba(100,100,100,1),
-    0 0.3em 1em -0.75em rgba(100,100,100,0.75),
-    0 0.3em 2em -0.5em rgba(100,100,100,0.5),
-    0 3em 3em -0.25em rgba(100,100,100,0.2);
     text-decoration: none;
     color: #333;
     .portfolioPreview{
@@ -70,6 +71,7 @@
         width: 100%;
         img{
           object-fit: cover;
+          min-width: calc(100% + 2px);
           min-width: 100%;
           height: 100%;
         }

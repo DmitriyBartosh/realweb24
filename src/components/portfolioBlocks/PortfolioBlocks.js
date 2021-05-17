@@ -29,11 +29,17 @@ function PortfolioBlocks() {
     <>
     <div className="portfolioTitle">
       <div className='container'>
+      <motion.h3
+        initial={{ opacity: 0, y: -20}}
+        animate={{ opacity: 1, y: 0}}
+        exit={{ opacity: 0, y: -20}}
+        transition={{duration: 0.4, type: "tween"}}
+        ><span>R</span>eal A<span>r</span>t | Вебстудия</motion.h3>
       <motion.h2
         initial={{ opacity: 0, y: -30}}
         animate={{ opacity: 1, y: 0}}
         exit={{ opacity: 0, y: -30}}
-        transition={{duration: 0.4, type: "tween"}}
+        transition={{duration: 0.4, delay: 0.1, type: "tween"}}
       ><span>Наши работы</span> полны<br />креатива, творчества и технологий</motion.h2>
       <motion.p
         initial={{ opacity: 0, y: 15}}
@@ -47,7 +53,8 @@ function PortfolioBlocks() {
     <motion.div 
       initial={{y: 300, opacity: 0}}
       animate={{y: 0, opacity: 1}}
-      transition={{duration: 0.8, type: "tween", delay: 0.3}}
+      exit={{ opacity: 0 }}
+      transition={{duration: 0.6, type: "tween", delay: 0.3}}
       className="portfolioList">
       {portfolioBlock}
     </motion.div>
